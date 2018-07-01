@@ -1,0 +1,12 @@
+
+{"namespace": "danch.kafka.eve_static_load",
+ "type": "record",
+ "name": "EveType",
+ "fields": [
+     {"name": "id", "type": "int"},
+     {"name": "groupId", "type": "int"},
+     {"name": "names", "type": {"type": "map", "values": "string"}},
+     {"name": "published", "type": "boolean"},
+     {"name": "marketGroupId", "type": ["null", "string"]}
+ ]
+}
